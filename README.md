@@ -1,6 +1,7 @@
 # Title of Game
 
-Explanation of the game that was built and the deployed link will go here.
+The Super-Smash-Bros-Arcade Game is a fun game that allows the user to select a player and battle it out
+ and the deployed link will go here.
 
 # HOW TO PLAY
 
