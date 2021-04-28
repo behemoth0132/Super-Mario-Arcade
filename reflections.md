@@ -10,17 +10,17 @@
 - [x] What did you achieve yesterday?
 - [x] What are your goals for today?
 - [x] Do you have any blockers?
-1. RESPONSE
-2. RESPONSE
-3. RESPONSE
+1. Finally found a good base of code I could use in order to redo my project.
+2. Get as much theming done as possible.
+3. Not at the moment.
 
 # Tuesday
 - [x] What did you achieve yesterday?
 - [x] What are your goals for today?
 - [x] Do you have any blockers?
-1. RESPONSE
-2. RESPONSE
-3. RESPONSE
+1. I got all the theming done as well as the game finished.
+2. Add the score and player life.
+3. cant get the start screen to link for some reason.
 
 # Wednesday
 - [x] What did you achieve yesterday?
