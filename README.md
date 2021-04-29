@@ -1,100 +1,45 @@
 # Title of Game
 
-The Super-Smash-Bros-Arcade 
+Super Mario Arcade
 
 # HOW TO PLAY
-Game is a fun game that allows the user to select a player and the character selected will be able to shoot lazer beams at the on coming enemies above, once they are all killed you will win the game
+It is a "Space Invaders" esque type of game where you move the arrow keys left and right and use the space key to fire off the red star from mario.
 
 ## Start Up Screen:
-![Start Screen_Start Screen](https://user-images.githubusercontent.com/81875454/116032667-1a9aef80-a62e-11eb-9f99-bc99d59999be.png)
+![Super Mario Arcade Start Up Screen](Peek https://i.imgur.com/Mr4WKgE.gifv)
 
 # HOW TO INSTALL
 1. *`Fork`* and *`Clone`* this respository to your local machine
 2. Open `index.html` in your browser to play
 
 # HOW IT WORKS
+The technology used in this game includes a lot of Javascript, a decent amount of CSS and HTML.
 Below is an example of some of the code that will be 
 ```
-class Invaders {
-    constructor(alienImage, rowsCount) {
-        this.alienImage = alienImage;
-        this.rowsCount = rowsCount;
-        this.direction = 0;
-        this.y = 40;
-        this.aliens = this.initialiseAliens();
-        this.bullets = [];
-     
-        this.speed = 0.2;
- 
+let start = document.querySelector('.game-wrapper');
+let ex = 10;
+function swing(element) {
+
+    function update(time) {
+        
+        const x = Math.sin(time / 1231) * ex;
+        const y = Math.sin(time / 1458) * ex;
+
+        element.style.transform = [
+            `rotateX(${x}deg)`,
+            `rotateY(${y}deg)`
+        ].join(' ');
+
+        requestAnimationFrame(update);
     }
- 
- 
-    update() {
-        for (let alien of this.aliens) {
-            if (this.direction == 0) {
-                alien.x+= this.speed;
-            } else if (this.direction == 1) {
-                alien.x-= this.speed;
-            }
-        }
- 
-    
- 
-        if (this.hasChangedDirection()) {
-            this.moveAlienDown();
-        }
-         
-    }
- 
- 
- 
-    hasChangedDirection() {
-        for (let alien of this.aliens) {
-            if (alien.x >= width - 40) {
-                this.direction = 1;
-                return true;
-            } else if (alien.x <= 20) {
-                this.direction = 0;
-                return true;
-            }
-        }
-        return false;
-    }
- 
-    moveAlienDown() {
-        for (let alien of this.aliens) {
-            alien.y += 10;
-        }
- 
-    }
- 
- 
-    initialiseAliens() {
-        let aliens = [];
-        let y = 40;
-        for (let i = 0; i < this.rowsCount; i++) {
-            for (let x = 40; x < width - 40; x += 30) {
-                aliens.push(new Alien(x, y, this.alienImage));
-            }
-            y += 40;
-        }
-        return aliens;
-    }
- 
-    draw() {
-        for (let alien of this.aliens) {
-            alien.draw();
-        }
- 
-    }
- 
-  
- 
+    update(0); //love your nested functions
 }
+
+swing(start); This piece of code allows the wrap around the gamer to swing.
 ```
 # FUTURE CONSIDERATIONS
 
-I dont have anything to add at the moment however once I finish building the game I will be able predict what I will want to add.
+I would like to add a character select screen as well as different enemies based off of the character that is seleceted to play the game.
 
 
 # PROCESS WORK
