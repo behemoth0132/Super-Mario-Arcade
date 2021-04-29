@@ -6,7 +6,7 @@ Super Mario Arcade
 It is a "Space Invaders" esque type of game where you move the arrow keys left and right and use the space key to fire off the red star from mario.
 
 ## Start Up Screen:
-![Super Mario Arcade Start Up Screen](https://media.giphy.com/media/aRMhVDAHKp0av9gYU2/source.gif)
+![Super Mario Arcade Start Up Screen](https://media.giphy.com/media/aRMhVDAHKp0av9gYU2/giphy.gif)
 
 # HOW TO INSTALL
 1. *`Fork`* and *`Clone`* this respository to your local machine
