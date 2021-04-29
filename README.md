@@ -3,7 +3,7 @@
 Super Mario Arcade
 
 # HOW TO PLAY
-It is a "Space Invaders-esque" type of game where you move the left and right arrow keys and use the space key to fire the "red stars"
+It is a "Space Invaders-esque" type of game where you move the left and right arrow keys to duck the flames and use the space key to fire off the "red stars".
 ![alt text](https://i.imgur.com/4XsedCb.jpg) ![alt text](https://i.imgur.com/m5exMiC.jpg)
 
 ## Start Up Screen:
