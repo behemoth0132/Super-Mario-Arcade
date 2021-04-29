@@ -16,6 +16,7 @@ const ENEMY_VERTICAL_PADDING = 70;
 const ENEMY_VERTICAL_SPACING = 80;
 const ENEMY_COOLDOWN = 5.0;
 
+
 const GAME_STATE = {
   lastTime: Date.now(),
   leftPressed: false,
@@ -271,6 +272,7 @@ function update(e) {
     document.querySelector(".congratulations").style.display = "block";
     return;
   }
+  
 
   const $container = document.querySelector(".game");
   updatePlayer(dt, $container);
@@ -306,4 +308,6 @@ init();
 window.addEventListener("keydown", onKeyDown);
 window.addEventListener("keyup", onKeyUp);
 window.requestAnimationFrame(update);
+
+
 
