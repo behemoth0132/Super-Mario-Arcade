@@ -49,13 +49,4 @@ I would like to add a character select screen as well as different enemies based
 # PROCESS WORK
 
 ## Initial Wireframes:
-![Start Screen_Start Screen](https://user-images.githubusercontent.com/81875454/116032426-ac562d00-a62d-11eb-819f-2b55632a489f.png)
-![Character Select_Character Select screen](https://user-images.githubusercontent.com/81875454/116032443-b6782b80-a62d-11eb-963a-7035e8c9071a.png)
 ![Game Play_Game Play ](https://user-images.githubusercontent.com/81875454/116032576-f0e1c880-a62d-11eb-8fad-80ff430d7d93.png)
-
-
-
-
-## Scratch Work:
-
-Scratch Work goes here
