@@ -4,7 +4,7 @@ Super Mario Arcade
 
 # HOW TO PLAY
 It is a "Space Invaders-esque" type of game where you move the left and right arrow keys and use the space key to fire off the red star from mario.
-![alt text](https://i.imgur.com/4XsedCb.jpg)
+![alt text](https://i.imgur.com/4XsedCb.jpg) ![alt text](https://i.imgur.com/K7e4hch.jpg)
 
 ## Start Up Screen:
 ![Super Mario Arcade Start Up Screen](https://media.giphy.com/media/aRMhVDAHKp0av9gYU2/giphy.gif)
