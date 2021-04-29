@@ -11,6 +11,7 @@ It is a "Space Invaders-esque" type of game where you move the arrow keys left a
 # HOW TO INSTALL
 1. *`Fork`* and *`Clone`* this respository to your local machine
 2. Open `index.html` in your browser to play
+3. ![alt text](https://i.imgur.com/Pc55FJf.png)
 
 # HOW IT WORKS
 The technology used in this game includes a lot of Javascript, a decent amount of CSS and HTML.
