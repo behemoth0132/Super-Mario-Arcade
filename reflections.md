@@ -26,9 +26,9 @@
 - [x] What did you achieve yesterday?
 - [x] What are your goals for today?
 - [x] Do you have any blockers?
-1. RESPONSE
-2. RESPONSE
-3. RESPONSE
+1. I was able to add alot of styling to my game.
+2. My goals for today is to add a start screen.
+3. Not at the moment.
 
 # Thursday
 - [x] What did you achieve yesterday?
