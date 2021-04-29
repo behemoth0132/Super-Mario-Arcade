@@ -4,6 +4,7 @@ Super Mario Arcade
 
 # HOW TO PLAY
 It is a "Space Invaders-esque" type of game where you move the arrow keys left and right and use the space key to fire off the red star from mario.
+![alt text](https://i.imgur.com/4XsedCb.jpg)
 
 ## Start Up Screen:
 ![Super Mario Arcade Start Up Screen](https://media.giphy.com/media/aRMhVDAHKp0av9gYU2/giphy.gif)
@@ -16,8 +17,8 @@ It is a "Space Invaders-esque" type of game where you move the arrow keys left a
 ![alt text](https://i.imgur.com/rdb6WnX.png)
 ![alt text](https://i.imgur.com/KoTr4U1.png)
 # HOW IT WORKS
-The technology used in this game includes a lot of Javascript, a decent amount of CSS and HTML.
-Below is an example of some of the code that will be featured. 
+The technology used in this game includes a lot of Javascript, a decent amount of CSS and HTML. It is pretty and fun at the same time. But it isnt easy!
+Below is an example of some of the design code that I used. 
 ```
 let start = document.querySelector('.game-wrapper');
 let ex = 10;
