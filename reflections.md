@@ -46,3 +46,8 @@
 2. RESPONSE
 3. RESPONSE
 
+# Closing for project
+- [x] What HTML, CSS, and or JavaScript skills you learned while building your game?
+- [x] What's one topic you want to spend more practice on
+1. I learned more about the importance of div's as far as HTML goes, CSS I learned about keyframes as I googled and youtubed everything, Javascript I learned about the importance of math and finding positions of your characters on screen and I learned a little bit more about the importance of call backs, even though I dont completely understand everything with javascript just yet.
+2. Functions Functions Functions for sure I pretty much have the other two down but javascript is still alot.
