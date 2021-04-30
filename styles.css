@@ -1,129 +1,109 @@
-html,
-body {
-  height: 100%;
-  overflow: hidden;
+html,                     /* this is referring to HTML and the Body*/
+body {                    
+  height: 100%;           /*this makes the body take up 100% of the browser height*/
+  overflow: hidden;       /*Content is clipped if necessary to fit the padding box.*/
+  margin: 0;              /*0 is for top-bottom, it will sit centrally within it's parent container*/
+  font: 16px sans-serif;  /* sans-serif is the font style used for the body 16px is the size used*/
 }
-
-body {
-  margin: 0;
-  font: 16px sans-serif;
+#wrap {                    /*this is referring to the div element with the i.d. of "wrap"*/
+  display: flex;          /*A flex container expands items to fill available free space or shrinks them to prevent overflow.*/
+  flex-direction: column; /*It establishes the main-axis, defining the direction flex items are placed in the flex container.*/
+  height: 100%;            /*this makes the #wrap be as big as the parent element "body"*/
+  background: black;     /* this sets the background color of "wrap" to black*/
 }
-
-#wrap {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  background: black;
+header {                   /*this is referring to the header of the page*/
+  text-align: center;      /*this is aligning the text in the header to the center*/
+  background: black;     /*this is making the background of the header black*/
+  color: #fff;           /*this is referring to the color of the text of the header which is white*/
+  padding: 10px;           /*these properties are used to generate space around an element's content and this one is set to 10px*/ 
 }
-
-header {
-  text-align: center;
-  background: black;
-  color: #fff;
-  padding: 10px;
+footer {                   /*refers to the footer at the bottom of the page*/
+  padding: 10px;           /*these properties are used to generate space around an element's content and this one is set to 10px*/ 
+  text-align: center;      /*this is aligning the text in the footer to the center*/
+  font-size: 11px;         /*this is giving the font a size 11px*/
+  background:black;      /*this sets the background of the footer to black*/
+  color: white;          /*this sets the text to the color of white*/
 }
-
-footer {
-  padding: 10px;
-  text-align: center;
-  font-size: 11px;
-  background:black;
-  color: white;
+.game-wrapper {            /*this is referring to the div element with the class of "game-wrapper"*/
+  flex: 1;                 /*flex:1 = flex:1 1 0 Makes the flex item flexible and sets the flex basis to zero, resulting in an item that receives the specified proportion of the free space in the flex container.*/
+  display: flex;           /*A flex container expands items to fill available free space or shrinks them to prevent overflow.*/
+  justify-content: center; /*defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.*/
+  align-items: center;     /*specifies the default alignment for items inside the flexible container.*/
+  background: linear-gradient(-45deg, green, red, yellow, blue, black);/* linear gradient means it can go down/up/left/right/diagonally* this is referring to the swinging part of the site.*/
+  background-size: 400% 400%; /*specifies the size of the background images.*/
+  animation: gradient 15s ease infinite; /*An animation lets an element gradually change from one style to another.*/
+  font-size: 1em;                        /*font size of the game wrapper this is equivalent to 16px*/
+  font-family: Arial;                    /*specifies the font family "arial"*/
+  text-shadow: 0 0 1px #000;           /*adds shadows to text*/
 }
-
-.game-wrapper {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(-45deg, green, red, yellow, blue, black);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+.game {                    /*this is referring to the div with the class "game"*/
+  width: 800px;            /*this specifies the width of the center screen the game is displayed on*/
+  height: 600px;           /*specifies the height of the center game screen it is displayed on*/
+  background: url(super_mario_bros-wallpaper.jpg); /*this is the wallpaper that is being scrolled*/
+  animation: scroll-background 5s linear infinite; /*An animation lets an element gradually change from one style to another. this is for the scrolling wallpaper*/
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);/* adds shadow effects around an element's frame*/
+  position: relative;/* is positioned relative to its normal position.*/
 }
-.game {
-  width: 800px;
-  height: 600px;
-  background: url(super_mario_bros-wallpaper.jpg);
-  animation: scroll-background 5s linear infinite;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  position: relative;
+.game .enemy {/*this is referring to div with the class of game and the positioning of the enemies "bowser"*/
+  position: absolute;/*is positioned relative to the nearest positioned ancestor instead of positioned relative to the viewport, like fixed*/
+  margin-left: -20px;/*Defines the space outside the element, on the left side.*/
+  margin-top: -18px;/*property sets the top margin of an element.*/
+  width: 40px;/*this specifies the width of bowser*/
 }
-
-@keyframes scroll-background {
-  from {
-    background-position-y: 0px;
-  }
-  to {
-    background-position-y: 256px;
-  }
+.game .player {/*referring to the div with the class of game and positioning of the player "mario"*/
+  position: absolute;/*is positioned relative to the nearest positioned ancestor instead of positioned relative to the viewport, like fixed*/
+  margin-left: -20px;/*Defines the space outside the element, on the left side.*/
+  width: 40px;/*this specifies the width of bowser*/
 }
-
-.game .enemy {
-  position: absolute;
-  margin-left: -20px;
-  margin-top: -18px;
-  width: 40px;
+.game .laser {/*referring to the div class game and customizing mario laser positioning*/
+  position: absolute;/*is positioned relative to the nearest positioned ancestor instead of positioned relative to the viewport, like fixed*/
+  margin-left: -2.5px;/*Defines the space outside the element, on the left side.*/
+  height: 30px;/*specifies the height of the center game screen it is displayed on*/
 }
-
-.game .player {
-  position: absolute;
-  margin-left: -20px;
-  width: 40px;
+.game .enemy-laser {/*referring to the div class game and customizing bowser fire positioning*/
+  position: absolute;/*is positioned relative to the nearest positioned ancestor instead of positioned relative to the viewport, like fixed*/
+  margin-left: -2.5px;/*Defines the space outside the element, on the left side.*/
+  height: 30px;/*specifies the height of the center game screen it is displayed on*/
 }
-
-.game .laser {
-  position: absolute;
-  margin-left: -2.5px;
-  height: 30px;
-}
-
-.game .enemy-laser {
-  position: absolute;
-  margin-left: -2.5px;
-  height: 30px;
-}
-
 .congratulations {
-  display: none;
-  position: absolute;
-  background: #c7a526;
-  color: white;
-  padding: 20px 50px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  text-align: center;
-  animation: pop-in 1s;
-  animation: skewed 0.3s infinite;
+  display: none;/*is commonly used to hide and show elements*/
+  position: absolute;/*is positioned relative to the nearest positioned ancestor instead of positioned relative to the viewport, like fixed*/
+  background: #c7a526;/*background of the congratulations button*/
+  color: white;/*this makes the text white*/
+  padding: 20px 50px;/*these properties are used to generate space around an element's content and this one is set to 10px*/ 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);/* adds shadow effects around an element's frame*/
+  border-radius: 10px;/*The border-radius CSS property rounds the corners of an element's outer border edge.*/
+  text-align: center;/*aligns the text in text to the center*/
+  animation: pop-in 1s;/*An animation lets an element gradually change from one style to another.*/
+  animation: skewed 0.3s infinite;/*An animation lets an element gradually change from one style to another.*/
 }
-
 .game-over {
-  display: none;
-  position: absolute;
-  background:black;
-  color: white;
-  padding: 20px 50px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  text-align: center;
-  animation: pop-in 1s;
-  animation: shapeshift 2s ease-in-out infinite;
+  display: none;/*is commonly used to hide and show elements*/
+  position: absolute;/*is positioned relative to the nearest positioned ancestor instead of positioned relative to the viewport, like fixed*/
+  background:black;/*background of the game-over button*/
+  color: white;/* sets the text to white*/
+  padding: 20px 50px;/*these properties are used to generate space around an element's content and this one is set to 10px*/ 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);/* adds shadow effects around an element's frame*/
+  border-radius: 10px;/*The border-radius CSS property rounds the corners of an element's outer border edge.*/
+  text-align: center;/*aligns the text in text to the center*/
+  animation: pop-in 1s;/*An animation lets an element gradually change from one style to another.*/
+  animation: shapeshift 2s ease-in-out infinite;/*An animation lets an element gradually change from one style to another.*/
 }
-
 .btn {
-  border: 2px solid #36bbf5;
-  border-radius: 3px;
-  box-shadow: 0 2px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(
+  border: 2px solid #36bbf5; /* this is customization of the buttons border the color is baby blue*/
+  border-radius: 3px;          /* allows you to add rounded corners to the button*/
+  box-shadow: 0 2px rgba(0, 0, 0, 0.15); /*adds shadow effects around this elements frame*/
+  background: linear-gradient(/* linear gradient means it can go down/up/left/right/diagonally but this particular on is referring to the bottom of the button*/
     to bottom,
     #fff 0%,
     #fff 49%,
     #f5f5f5 50%,
     #eee 100%
   );
-  padding: 10px 40px;
-  font: 14px sans-serif;
+  padding: 10px 40px;/*these properties are used to generate space around an element's content*/
+  font: 14px sans-serif;/* this is specifying the font used and size as well*/
 }
-@keyframes pop-in {
+@keyframes pop-in {/*A keyframe defines the style that will be applied for that moment within the animation. This is referring to the pop in animation for both the winning and losing buttons */
   0% {
     opacity: 0;
     transform: translate(0, -100px);
@@ -138,8 +118,7 @@ footer {
     transform: translate(0, 0);
   }
 }
-
-@keyframes gradient {
+@keyframes gradient {/*A keyframe defines the style that will be applied for that moment within the animation. This refers to the game wrap element with the shifting colors. */
   0% {
     background-position: 0% 50%;
   }
@@ -150,12 +129,7 @@ footer {
     background-position: 0% 50%;
   }
 }
-
-html {
-  height: 100%;
-}
-
-@keyframes skewed {
+@keyframes skewed { /*A keyframe defines the style that will be applied for that moment within the animation. This refers to the winning button*/
 	0% {
 		transform: skew(20deg);
 	}
@@ -163,12 +137,15 @@ html {
 		transform: translate(-5px, -5px);
 	}
 }
-#seventh {
-	animation: skewed1 0.3s infinite;
+@keyframes scroll-background { /*A keyframe defines the style that will be applied for that moment within the animation, this is for the scrolling wallpaper during the game*/
+  from {
+    background-position-y: 0px;
+  }
+  to {
+    background-position-y: 256px;
+  }
 }
-
-
-@keyframes shapeshift {
+@keyframes shapeshift { /*A keyframe defines the style that will be applied for that moment within the animation. this one is referring to the losing button*/
 	0% {
 		border-radius: 50%;
 	}
@@ -183,14 +160,7 @@ html {
 		border-radius: 50%;
 	}
 }
-
-.game-wrapper {
-  color: #fff;
-  font-size: 1em;
-  font-family: Arial;
-  text-shadow: 0 0 1px #000;
-}
-
+/*A @-webkit-keyframes block contains rule sets called keyframes. A keyframe defines the style that will be applied for that moment within the animation. This is referring to the rain drops */
 @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
 
 
