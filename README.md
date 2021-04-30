@@ -41,6 +41,17 @@ function swing(element) {
 
 swing(start); This piece of code allows the wrap around the game to swing.
 ```
+```
+function createPlayer($container) {//figures out the position of the player
+  GAME_STATE.playerX = GAME_WIDTH / 2;//which is 400 puts the player in the middle of the screen
+  GAME_STATE.playerY = GAME_HEIGHT - 50;//which is 550 a little bit off
+  const $player = document.createElement("img");//create the player element which is an image
+  $player.src = "PngItem_37070.png";//set the attributes the image source
+  $player.className = "player";//class name 
+  $container.appendChild($player);//append the child to an existing element in the DOM "container"
+  setPosition($player, GAME_STATE.playerX, GAME_STATE.playerY);//selects the player DOM element and changes the player image to the correct position 
+}
+```
 # FUTURE CONSIDERATIONS
 
 I would like to add a character select screen as well as different enemies based off of the character that is seleceted to play the game.
