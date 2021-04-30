@@ -50,7 +50,7 @@ function swing(element) {
 
 swing(start);
 
-function rectsIntersect(r1, r2) {//if these conditions are not met the lasers are not intersect 
+function rectsIntersect(r1, r2) { //if these conditions are not met the lasers are not intersect 
   return !(
     r2.left > r1.right ||
     r2.right < r1.left ||
@@ -59,7 +59,7 @@ function rectsIntersect(r1, r2) {//if these conditions are not met the lasers ar
   );
 }
 
-function setPosition(el, x, y) {////sets the position of our elements, takes in a DOM element and x and y position
+function setPosition(el, x, y) {//sets the position of our elements, takes in a DOM element and x and y position
   el.style.transform = `translate(${x}px, ${y}px)`;//want the value of our variable 
 }
 
@@ -89,12 +89,6 @@ function createPlayer($container) {//figures out the position of the player
   setPosition($player, GAME_STATE.playerX, GAME_STATE.playerY);//selects the player DOM element and changes the player image to the correct position 
 }
 
-function createPlayer(player) {
-  $container.appendChild(player);
-  GAME_STATE.gameStart = true;
-  const audio = new Audio("smb_gameover.wav");
-  audio.play();
-}
 
 function destroyPlayer($container, player) {
   $container.removeChild(player);
