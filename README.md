@@ -51,3 +51,20 @@ I would like to add a character select screen as well as different enemies based
 
 ## Initial Wireframes:
 ![Game Play_Game Play ](https://user-images.githubusercontent.com/81875454/116032576-f0e1c880-a62d-11eb-8fad-80ff430d7d93.png)
+
+# SOURCES
+https://www.youtube.com/watch?v=H5Stvl_kzag&ab_channel=FrederikDeBleser
+https://www.youtube.com/watch?v=wDFim4Ddqeo&ab_channel=FrederikDeBleser
+https://www.youtube.com/watch?v=ytCWn96h3j4&ab_channel=FrederikDeBleser
+https://www.youtube.com/watch?v=IL8BaSKCOVo&ab_channel=FrederikDeBleser
+https://codepen.com
+https://stackoverflow.com
+https://github.com/fdb/space-game.git
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+https://en.wikipedia.org/wiki/Video_game_programming
+https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now
+https://en.wikipedia.org/wiki/Delta_timing
+https://en.wikipedia.org/wiki/Hit-testing
+
+
